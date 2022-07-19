@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: "Node Classification"
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Miguel
+    family-names: Romero
+    email: miguelangel.romero@javerianacali.edu.co
+    affiliation: Pontificia Universidad Javeriana
+    orcid: 'https://orcid.org/0000-0002-7068-970X'
+  - given-names: Felipe Kenji
+    family-names: Nakano
+  - given-names: Jorge
+    family-names: Finke
+  - given-names: Camilo
+    family-names: Rocha
+  - given-names: Celine
+    family-names: Vens
+doi: 10.48550/arXiv.2207.06237
+date-released: 2022-07-12
+url: "https://github.com/migueleci/reassign"
