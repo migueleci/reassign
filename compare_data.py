@@ -19,7 +19,7 @@ from goatools.gosubdag.gosubdag import GoSubDag
 from goatools.gosubdag.plot.gosubdag_plot import GoSubDagPlot
 
 # Node embedding
-from pecanpy import pecanpy, node2vec
+# from pecanpy import pecanpy, node2vec
 from sklearn.manifold import TSNE
 from sklearn.cluster import AffinityPropagation
 
@@ -291,6 +291,7 @@ for i, (root, hterms) in enumerate(zip(test_rid, test_hpt)):
     create_path(path)
 
     list2file(np.searchsorted(n_hgenes, hgenes), "{0}/genes_co.txt".format(path))
+    list2file(genes[np.searchsorted(n_hgenes, hgenes)], "{0}/genes.txt".format(path))
     list2file(np.searchsorted(n_hgenes, t_hgenes), "{0}/genes_test.txt".format(path))
     list2file(terms[hterms[1:]], "{0}/terms.txt".format(path))
 
@@ -431,6 +432,8 @@ for i, (root, hterms) in enumerate(zip(test_rid, test_hpt)):
     print()
 
     # break
+
+sys.exit()
 
 list2file(terms[root_list], "data/roots.txt")
 test_df_subh = test_df_subh[test_df_subh.Root_idx.isin(root_list)].reset_index(drop=True)
