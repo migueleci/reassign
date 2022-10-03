@@ -1,5 +1,4 @@
 import os
-import multiprocessing
 
 import numpy as np
 import igraph as ig
